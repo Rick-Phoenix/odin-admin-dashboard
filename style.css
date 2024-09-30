@@ -7,12 +7,20 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
+    grid-template-rows: repeat(5, 20vh);
     height: 100vh;
 }
 
-.header {
+header {
     background-color: aliceblue;
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: repeat(2, 1fr);
+    padding-left: 50px;
+    padding-right: 50px;
+    align-items: center;
+    font-weight: 500;
 }
 
 .sidebar {
@@ -85,4 +93,77 @@ li img {
     grid-row: 9 / 12;
 }
 
+.searchbar {
+    display: flex;
+    gap: 10px;
+}
 
+.searchbar img {
+    width: 4%;
+    
+}
+
+.searchbar input {
+    width: 90%;
+    border-radius: 15px;
+    background-color: darkgray;
+    border: none;
+}
+
+.profile-tr {
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    align-items: center;
+}
+
+.profile-tr img {
+    width: 7%;
+}
+
+.profile-tr .Nina {
+    border-radius: 50px;
+    width: 12%;
+}
+
+.profile-bl {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.profile-bl .Nina {
+    border-radius: 50px;
+    width: 10%;
+}
+
+.profile-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.up {
+    font-size: 13px;
+}
+
+.down {
+    font-size: 25px;
+}
+
+.buttons {
+    justify-self: end;
+    gap: 30px;
+    display: flex;
+}
+
+button {
+    padding: 8px 30px;
+    border-radius: 20px;
+    background-color: #ffe4c4;
+    border: none;
+    font-weight: 500;
+    font-family: inherit;
+}
