@@ -6,7 +6,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 3.7fr;
     grid-template-rows: repeat(5, 20vh);
 }
 
@@ -34,7 +34,7 @@ header {
 }
 
 main {
-    background-color: #69696952;
+    background-color: #9a9a9a3d;
     grid-row: 2 / 6;
 }
 
@@ -53,7 +53,7 @@ ul {
     margin: 0;
 }
 
-li img {
+.sidebar li img {
     width: 10%;
     margin-right: 25px;
     margin-left: 10px;
@@ -167,17 +167,110 @@ button {
 }
 
 main {
-    padding: 20px;
+    padding: 30px 50px 40px 50px;
     display: grid;
     grid-template-columns: 2fr 0.7fr;
-    grid-template-rows: 1fr;
-    gap: 15px;
+    grid-template-rows: 0.02fr 1fr;
+    gap: 0 50px;
 }
 
 .projects {
     grid-column: 1/2;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr 1fr 1fr 1fr;
-    gap:15px;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap:30px;
+}
+
+.projects ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    grid-area: 1 / 1 / 4 / 3;
+}
+
+.projects li {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    border-radius: 10px;
+    border-left: solid bisque 10px;
+    padding: 15px;
+}
+
+.projects li,
+div.announcements,
+div.trending {
+    box-shadow: #80808057 1px 1px 5px 1px;
+}
+
+span.announcements {
+    grid-area: 1 / 2 / 1 / 3;
+}
+
+main > span {
+    align-self: end;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+div.side-content {
+    display: grid;
+    grid: 4fr 1fr 4fr / 1fr
+}
+
+.side-content > span {
+    align-self: end;
+    margin-bottom: 10px;
+    grid-row: 2/3;
+    font-weight: 500;
+}
+
+div.announcements,
+.trending {
+    background-color: white;
+    border-radius: 10px;
+}
+
+div.announcements {
+    padding: 20px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+div.announcements > div:not(:last-child) {
+    border-bottom: 1px solid #969090;
+}
+
+.announcement {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+h5 {
+    margin: 0;
+}
+
+.icons {
+    display: flex;
+    height: 25px;
+    align-self: end;
+    margin-top: auto;
+    gap: 10px;
+}
+
+.icons img {
+    height: 100%;
+}
+
+.trending {
+    padding: 15px;
+    display: grid;
+    grid: repeat(4,1fr) / 1fr;
+}
+
+.profile {
+    
 }
