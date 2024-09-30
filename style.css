@@ -18,10 +18,9 @@ body {
 .sidebar {
     background-color: bisque;
     grid-row: 1 / 6;
-    padding: 10px;
+    padding: 15px;
     display: grid;
-    grid-template-rows: 1fr repeat(6, 1fr) 2fr repeat(3, 1fr) 6fr;
-    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 2fr repeat(6, 1fr) 2fr repeat(3, 1fr) 6fr;
     justify-items: start;
     align-items: center;
     height: 100vh;
@@ -34,8 +33,9 @@ main {
 }
 
 .logo {
-    grid-area: 1 / 1 / 2 / 2;
+    align-self: baseline;
 }
+
 
 
 ul {
@@ -47,15 +47,42 @@ ul {
     margin: 0;
 }
 
+li img {
+    width: 10%;
+    margin-right: 25px;
+    margin-left: 10px;
+}
+
+.logo img {
+    width: 20%;
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.sidebar li {
+    display: flex;
+    align-items: center;
+}
+
 .sidebar-1 {
-    grid-area: 2 / 2 / 8 / 3;
+    grid-row: 1 / 8;
 }
 
 .sidebar-2 {
-    grid-area: 9 / 2 / 12 / 3;
+    grid-row: 9 / 12;
 }
 
-home::before {
-    grid-area: 2 / 1 / 3 / 2;
-    content: url(home.svg);
-}
+
