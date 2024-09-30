@@ -8,7 +8,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: repeat(5, 20vh);
-    height: 100vh;
 }
 
 header {
@@ -31,12 +30,11 @@ header {
     grid-template-rows: 2fr repeat(6, 1fr) 2fr repeat(3, 1fr) 6fr;
     justify-items: start;
     align-items: center;
-    height: 100vh;
     gap: 0 15px;
 }
 
 main {
-    background-color: dimgrey;
+    background-color: #69696952;
     grid-row: 2 / 6;
 }
 
@@ -166,4 +164,20 @@ button {
     border: none;
     font-weight: 500;
     font-family: inherit;
+}
+
+main {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 0.7fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+}
+
+.projects {
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 1fr 1fr;
+    gap:15px;
 }
