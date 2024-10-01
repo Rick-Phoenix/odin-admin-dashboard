@@ -251,6 +251,7 @@ div.announcements > div:not(:last-child) {
 
 h5 {
     margin: 0;
+    color: black;
 }
 
 .icons {
@@ -271,6 +272,33 @@ h5 {
     grid: repeat(4,1fr) / 1fr;
 }
 
-.profile {
-    
+li.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile img {
+    border-radius: 50px;
+    width: 20%;
+}
+
+ul.profile {
+    grid-row: 1 / 5;
+}
+
+div.profile {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+span.tag {
+    font-weight: 400;
+}
+
+div.announcement:not(h5), 
+.projects li:not(h5),
+span.description {
+    color: #525252;
 }
